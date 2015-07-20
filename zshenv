@@ -2,6 +2,12 @@
 export VISUAL=vim
 export EDITOR=$VISUAL
 
+# Go env variables
+export GOPATH="$HOME/code/go"
+export GOROOT="/usr/local/opt/go/libexec"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$GOROOT/bin"
+
 # ensure dotfiles bin directory is loaded first
 export PATH="$HOME/.bin:/usr/local/sbin:$PATH"
 
