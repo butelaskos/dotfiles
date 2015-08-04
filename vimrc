@@ -86,6 +86,9 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+let g:CommandTMaxHeight = 10
+let g:CommandTMatchWindowReverse = 1
+
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
@@ -263,6 +266,9 @@ let g:go_fmt_command = "goimports"
 " Leader ====================
 " ===========================
 
+" Map CommandT to CtrlP
+map <c-p> :CommandT<CR>
+
 nnoremap <leader>r :RunInInteractiveShell<space>
 
 " Switch between the last two files
@@ -284,7 +290,7 @@ nnoremap <leader>fr :VtrFocusRunner<cr>
 nnoremap <leader>k :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Search the word under cursor as file name using Ctrl+P
-nmap <leader>lw :CtrlP<CR><C-\>w
+nmap <leader>lw :CommandT<CR><C-\>w
 
 " Display syntax errors panels
 nmap <leader>eo :Errors<CR>
