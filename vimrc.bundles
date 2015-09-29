@@ -29,8 +29,8 @@ call plug#begin('~/.vim/bundle')
 " Define bundles via Github repos
 Plug 'christoomey/vim-run-interactive' " Run interactive commands on Shell
 Plug 'kchmck/vim-coffee-script'        " Coffe Script support for Vim
-" Plug 'ctrlpvim/ctrlp.vim'              " Quick search project files
-Plug 'wincent/Command-T'               " Quick search project files
+Plug 'ctrlpvim/ctrlp.vim'              " Quick search project files
+" Plug 'wincent/Command-T'               " Quick search project files
 Plug 'pbrisbin/vim-mkdir'              " Auto create dir when creating files
 Plug 'scrooloose/syntastic'            " Syntax Check plugin
 Plug 'slim-template/vim-slim'          " Syntax Highlighting
