@@ -150,3 +150,5 @@ zle -N edit-command-line
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+eval "$(rbenv init - --no-rehash zsh)"
