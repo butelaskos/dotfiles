@@ -23,6 +23,7 @@ fi
 
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Local config
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
