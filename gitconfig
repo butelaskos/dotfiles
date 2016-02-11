@@ -32,3 +32,12 @@
   check = true
 [include]
   path = ~/.gitconfig.local
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[diff "gpg"]
+  textconv = dotgpg unsafe_cat
+[merge "gpg"]
+  name = dotgpg merge driver
+  driver = "dotgpg merge %O %A %B"
