@@ -104,12 +104,8 @@ set numberwidth=4
 set wildmode=list:longest,list:full
 set wildmenu wildmode=list:longest,list:full
 
-" Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing
-let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
-
 " Index ctags from any project, including those outside Rails
 set tags+=.git/tags,.git/vendor-tags
-
 
 " Get off my lawn
 " nnoremap <Left> :echoe "Use h"<CR>
