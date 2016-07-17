@@ -152,3 +152,4 @@ zle -N edit-command-line
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 eval "$(rbenv init - --no-rehash zsh)"
+source /usr/local/bin/virtualenvwrapper.sh
