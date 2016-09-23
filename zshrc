@@ -144,6 +144,8 @@ zle -N zle-line-finish
 zle -N zle-keymap-select
 zle -N edit-command-line
 
+alias d=docker
+
 [[ -f ~/.scm_breeze/scm_breeze.sh ]] && source ~/.scm_breeze/scm_breeze.sh
 
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
@@ -153,3 +155,5 @@ zle -N edit-command-line
 
 eval "$(rbenv init - --no-rehash zsh)"
 source /usr/local/bin/virtualenvwrapper.sh
+
+export DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS="-t DAV"
