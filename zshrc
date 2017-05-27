@@ -153,7 +153,7 @@ alias d=docker
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-eval "$(rbenv init - --no-rehash zsh)"
-# source /usr/local/bin/virtualenvwrapper.sh
-
 export DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS="-t DAV"
+
+export PATH="$HOME/.bin:$PATH"
+eval "$(rbenv init - --no-rehash)"
